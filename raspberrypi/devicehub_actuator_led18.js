@@ -5,7 +5,7 @@ var led = new GPIO(18, 'out');
 var host='mqtt://mqtt.devicehub.net';
 var port='1883';
 var message = '{"state":1}';
-var topic ='';//put you unique topic id from devicehub
+var topic ='/a/813e788e-81f5-45a8-bd89-d8200a5bb9e8/p/4826/d/263401a7-95fe-40c1-9feb-069e0a95640c/actuator/actuator_led18/state';
 
 
 

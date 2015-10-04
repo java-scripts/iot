@@ -1,0 +1,59 @@
+
+.feed-carousel{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+ul.feed-carousel-shelf{
+    position: relative;
+    left: 0px;
+	cursor:move;
+}
+
+ul.feed-carousel-shelf li{
+	display:inline;
+}
+
+
+ul.feed-carousel-shelf li>div{
+	display:inline-block;
+}
+
+.feed-carousel .left,.feed-carousel .right{
+	position:relative;
+	top:-100px;
+}
+
+.worksheet{
+	width:800px;
+	height:600px;
+}
+
+.feedimg,.feedimg img{
+	height:100px;
+}
+
+.sensor{
+	z-index:99999;
+	border: 2px solid pink;
+}
+
+.lcdtext{
+position: relative;
+    top: -51px;
+    left: -170px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+.chart-icon{
+	width: 196px;height: 104px;
+}
+.chart-medium{
+	width: 400px;height: 300px;
+}
+
+
+.active{
+	box-shadow: 2px 2px 5px red;
+}
+

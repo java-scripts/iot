@@ -6,7 +6,7 @@ var request = require('request');
 
 console.log('MRAA Version:' + mraa.getVersion()); //write the mraa version to the console
 
-var CIK = '';//put your device CIK from exosite.com;
+var CIK = '41927147ea58c7022bcd7d42cb532f6313bf7c62';//put your device CIK from exosite.com;
 //here temperature, pressure and assetswitch are the alias names of the data ports. you can change by yours.
 
 

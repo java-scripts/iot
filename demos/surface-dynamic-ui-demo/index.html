@@ -1,0 +1,171 @@
+ <!DOCTYPE html>
+  <html ng-app="myapp">
+    <head>
+    <!--Import materialize.css-->
+	<!--
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
+    </head>
+    <body ng-controller="MainController">
+		<header>
+			<nav class="top-nav" style="position:fixed;z-index:9999; ">
+				<div class="container">
+				  <div class="nav-wrapper">
+					 <a href="#" class="brand-logo">JAVA SCRIPTS</a>
+					  <ul id="nav-mobile" class="right hide-on-med-and-down">					
+						<li><a href="https://github.com/java-scripts">View On GitHub</a></li>
+					  </ul>				
+					</div>
+				</div>				
+				<ul id="slide-out" class="side-nav">
+					<li><a href="#!"></a></li>
+					<li><a href="#!"></a></li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>   
+			  </nav>
+			  <nav></nav>
+		</header>
+		
+		<main>			
+			
+			<div class="container">
+			
+				<div class="row" id="scrollcontainer">
+					<div class="col s1 m1 l1">						
+						
+					</div>
+					<div class="col s10 m10 l10">
+						<div id="sensorholder" style="position:absolute;">							
+						</div>
+						<!--<h3> Sensors and Others </h3>-->	
+						<div class="feed-carousel" id="feed1">									
+							<ul class="feed-carousel-shelf" shift="200">
+								<li><img src="img/light_in.PNG" class="feedimg" name="light" gtype="input"></li>
+								<li><img src="img/temp_in.PNG" class="feedimg" name="temp" gtype="input"></li>
+								<li><img src="img/sound_in.PNG" class="feedimg" name="sound" gtype="input"></li>
+								<li><img src="img/touch_in.PNG" class="feedimg" name="touch" gtype="input"></li>
+								<li><img src="img/rotary_in.PNG" class="feedimg" name="rotary" gtype="input"></li>
+									
+								<li>
+									<div class="feedimg" name="condition" gtype="condition" style="width: 108px;height: 104px;">
+										<img src="img/condition.PNG" >
+										<select id="output" style="margin-top: -5px;"></select>
+										<div style="position: relative; left: 108px; top: -135px;">
+										<select id="input"></select>
+										<select id="condition">
+											<option value="==">=</option>
+											<option value="<"><</option>		
+											<option value=">">></option>
+											<option value="<="><=</option>											
+											<option value=">=">>=</option>
+										</select>
+										<input type="text" id="threshold" style="display:none;" value="0">				
+																			
+										</div>
+									</div>
+								</li>
+								
+								
+								<li><img src="img/buzzer_out.PNG" class="feedimg" name="buzzer" gtype="output"></li>
+								<li><img src="img/led_out.PNG" class="feedimg" name="led" gtype="output"></li>
+								<li><img src="img/relay_out.PNG" class="feedimg" name="relay" gtype="output"></li>
+
+									
+								<li>
+									<div class="feedimg" name="lcd" gtype="lcd" style="width: 196px;height: 104px;">
+										<img src="img/LCD_Display.PNG" ><span class="lcdtext"></span>
+									</div>
+								</li>
+							<li>
+								<div class="feedimg chart-icon" name="chart" gtype="chart">
+									<img src="img/chart_Display.PNG" ><span class="lcdtext"></span>
+								</div>
+							</li>
+								
+
+								
+							</ul>
+							<button class="btn left deep-orange" name="left"> < </button>	
+							<button class="btn right deep-orange" name="right"> > </button>
+						</div>	
+						<!--<h3> Work Bench </h3>-->
+						<div class="feed-carousel" id="feed2">									
+							<ul class="feed-carousel-shelf">
+								<li>
+									<div class="card purple lighten-3 worksheet" name="card1">
+										<div class="card-content">
+										  <span class="card-title">Card Title</span>
+										  <p>I am a very simple card. </p>
+										</div>									   
+									  </div>								
+								</li>
+								<li>
+									<div class="card purple lighten-4 worksheet" name="card2">
+										<div class="card-content">
+										  <span class="card-title">Card Title</span>
+										  <p>I am a very simple card. </p>
+										</div>									   
+									  </div>								
+								</li>
+								<li>
+									<div class="card purple lighten-3 worksheet" name="card3">
+										<div class="card-content">
+										  <span class="card-title">Card Title</span>
+										  <p>I am a very simple card. </p>
+										</div>									   
+									  </div>								
+								</li>
+								<li>
+									<div class="card purple lighten-4 worksheet" name="card4">
+										<div class="card-content">
+										  <span class="card-title">Card Title</span>
+										  <p>I am a very simple card. </p>
+										</div>									   
+									  </div>								
+								</li>
+							
+									
+							</ul>
+							<button class="btn left deep-orange"> < </button>	
+							<button class="btn right deep-orange" > > </button>
+						</div>
+					</div>
+					<div class="col s1 m1 l1">						
+						
+					</div>				
+				</div>					
+			</div>		
+		</main>		
+		
+		 <footer class="page-footer">
+          <div class="container">		  
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">To be continued...</h5>
+				<!--
+                <p class="grey-text text-lighten-4">			
+				</p>
+				-->
+              </div>             
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">	Thanks 4 Visiting
+            <a class="grey-text text-lighten-4 right" href="#!">Developed by SARAT</a>
+            </div>
+          </div>
+        </footer>
+		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>		
+		<script type="text/javascript" src="js/highcharts.js"></script>		
+		
+		<script type="text/javascript" src="js/materialize.min.js"></script>	
+		<script type="text/javascript" src="js/lib.js"></script>	
+		<script type="text/javascript" src="js/controller.js"></script>		
+    </body>
+  </html>
